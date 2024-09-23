@@ -1,0 +1,305 @@
+@use './main.scss' as color;
+
+.breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 43px;
+
+    .img-container{
+        width: 18px;
+        height: 18px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    h2{
+        font-size: 14px ;
+        color: #000;
+        text-transform: uppercase;
+    }
+}
+
+
+.contact-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        gap: 20px;
+
+        .left{
+            flex: 0.7;
+            .title{
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+
+                h1{
+                    color: #000;
+                    font-size: 38px;
+                    line-height: 55px;
+
+                }
+            }
+
+            p{
+                font-size: 18px;
+                color: #000;
+            }
+
+            .text-box-1{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .text-box{
+                margin-top: 90px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height:fit-content;
+                gap: 10px;
+    
+                .blue-line-vertical{
+                    width: 5px;
+                    height: 70px;
+                    background-color: #003382;
+                }
+    
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    p{
+                        font-size: 22px;
+                        color: #000;
+                        line-height: 27px !important;
+                        margin: 0px !important;
+                    }
+                }
+    
+            }
+        }
+
+        .right{   
+            flex: 1;         
+            .tabs {
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+            
+                .tab-button {
+                    padding: 10px 20px;
+                    border: 1px solid #C2DAFF;
+                    background-color: #f1f1f1;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+            
+                    &.active {
+                        background-image: linear-gradient(to right, #276BD4, #003382) !important; /* Gradient background */
+                        color: #fff;
+                        border-bottom: none;
+                    }
+            
+                    &:hover {
+                        background-color: #e0e0e0;
+                    }
+                }
+            }
+            
+            .tab-content {
+            
+                .tab-panel {
+                    display: none;
+            
+                    &.active {
+                        display: block;
+                    }
+
+                    form{
+                        background-image: linear-gradient(to right, #C0D9FF33, #6CB73E33);
+                        padding: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: left;
+                        gap: 33px;
+
+                        .title{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            width: 100%;
+
+
+                            p{
+                                font-size: 22px;
+                                margin: 0px;
+                                color:#000;
+                            }
+                            .p1{
+                                font-size: 18px !important;
+                                font-weight: 300 !important;
+                            }
+                        }
+
+                        .form-fields{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            width: 100%;
+
+                            input,
+                            textarea{
+                                width: 100%;
+                                padding: 11px 18px;
+                                color: #555555;
+                                font-size: 15px;
+                                font-family: "Inter", sans-serif !important;
+                                font-optical-sizing: auto !important;
+                                font-style: normal !important;
+                                border: 1px solid #C2DAFF;
+                            }
+
+                            /* Specific styles for file input */
+                            input[type="file"] {
+                              padding: 10px;
+                              border: 1px solid #C2DAFF;
+                              background-color: #f9f9f9; /* Optional background color */
+                              cursor: pointer;
+                            }
+
+                        }
+
+                        .btn-2{
+                            width: fit-content;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.co-founder-section{
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-image: linear-gradient(to right, #ACE352, #6CB73E);
+
+    .co-founder-container{
+        width: 1050px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+
+        h1{
+            font-size: 38px;
+            line-height: 55px;
+        }
+
+        .flex-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 115px;
+
+            .info-box{
+                width: 100%;
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                gap: 37px;
+
+                .img-container{
+                    width: 100%;
+                    height: 170px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .text-box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+                    h1{
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+                    
+                    .contact-details{
+                        p{
+                            font-size: 18px;
+                            margin: 0px;
+                        }
+                    }
+
+                    a{
+                        font-size: 20px;
+                        text-decoration: underline !important;
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 78px;
+}
+
+
+// Components
+.gradient-border{
+    position: relative;
+    padding: 2px 15px;
+    width: fit-content;
+}
+.gradient-border::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0px; 
+    padding: 1px; 
+    background:linear-gradient(45deg,#6CB73E,#132643); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+}

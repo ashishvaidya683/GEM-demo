@@ -1,0 +1,60 @@
+@use '../../css/main.scss' as color;
+
+
+footer{
+    margin-top: 60px;
+    background-color: #132643;
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 70px;
+        padding-top: 56px;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #fff;
+        
+        .content{
+            max-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: start;
+            align-items: start;
+            color: #fff;
+    
+            .img-container{
+                width: auto;
+                height: 52px;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            
+            ul{
+                list-style-type: none;
+                
+                li{
+                    padding-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    .bottom-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0px;
+    }
+
+}
+
+
+p{
+    font-size: 15 !important;
+    color: #fff;
+}
