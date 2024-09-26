@@ -4,12 +4,13 @@
     <meta name="google-site-verification" content="KJUlWPmfQprNJ_p4UR3BnIpyzFPjPbo4mHgj4eUk4xU" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | GEM | Environment Speaks... We Translate</title>
+    <title>Contact | GEM | Environment Speaks... We Translate</title>
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./components/css/header.css">
@@ -25,16 +26,16 @@
         <div class="breadcrumbs container">
             <a href="/">
                 <div class="img-container">
-                    <img src="./img/home (1) 1.svg" alt="">
+                    <img src="./img/home-black.svg" alt="">
                 </div>
             </a>
             <div>
-                <h2>> SERVICES</h2>
+                <p>> Contact</p>
             </div>
         </div>
 
         <section class="contact-section">
-            <div class="contact-container">
+            <div class="contact-container container">
                 <div class="left">
                     <div class="title">
                         <h1>Contact</h1>
@@ -54,22 +55,23 @@
                         <div class="blue-line-vertical"></div>
                         <div class="text">
                             <p>Want to connect on quick call?</p>
-                            <p>+91 99675 42950</p>
+                            <a href="tel:+91 99675 42950"><p>+91 99675 42950</p></a>
                         </div>
                     </div>
 
                     <p>
-                        Or write to us on mahesh.c@gempl.com
+                        Or write to us on <a href="mailto:mahesh.c@gempl.com">mahesh.c@gempl.com</a>
                     </p>
                 </div>
 
                 <div class="right">
 
                     <div class="tabs">
-                        <div class="tab-button active">Enquiry form</div>
-                        <div class="tab-button">Join now Form</div>
+                        <div class="tab-button active">Enquire Now</div>
+                        <div class="tab-button">Join now</div>
                     </div>
                     <div class="tab-content">
+                        <!-- Enquiry form -->
                         <div class="tab-panel active">
                             <form id="contact-form" onsubmit="reset(); return false;">
                                 <div class="title">
@@ -78,15 +80,17 @@
                                 </div>
 
                                 <div class="form-fields">
-                                    <input type="text" placeholder="Full Name*" name="name" id="pname" required>
-                                    <input type="email" placeholder="Email*" name="email" id="pemail" required>
-                                    <input type="text" placeholder="What do you need help with?*" name="phone" id="pphone" required> 
-                                    <textarea placeholder="Your message*" name="message" id="pmessage" cols="30" rows="4"></textarea>
+                                    <input type="text" placeholder="Full Name*" name="name" id="e-name" required>
+                                    <input type="email" placeholder="Email*" name="email" id="e-email" required>
+                                    <input type="text" placeholder="What do you need help with? *" name="help" id="e-help" required> 
+                                    <textarea placeholder="Your message*" name="message" id="e-message" cols="30" rows="4"></textarea>
                                 </div>
 
-                                <button class="btn-2" id="submit-btn" onClick="sendEmail()" type="submit">Submit My Enquiry</button>
+                                <button class="btn" id="submit-btn" onClick="sendEnquiry()" type="submit">Submit My Enquiry</button>
                             </form>
                         </div>
+
+                        <!-- Join Now From -->
                         <div class="tab-panel">
                             <form id="contact-form" onsubmit="reset(); return false;">
                                 <div class="title">
@@ -95,14 +99,14 @@
                                 </div>
                             
                                 <div class="form-fields">
-                                    <input type="text" placeholder="Full Name*" name="name" id="pname" required>
-                                    <input type="email" placeholder="Email*" name="email" id="pemail" required>
-                                    <input type="text" placeholder="What do you need help with?*" name="phone" id="pphone" required>
-                                    <input type="file" placeholder="Upload Resume*" name="resume" id="presume" required>
-                                    <textarea placeholder="Your message*" name="message" id="pmessage" cols="30" rows="4"></textarea>
+                                    <input type="text" placeholder="Full Name*" name="name" id="j-name" required>
+                                    <input type="email" placeholder="Email*" name="email" id="j-email" required>
+                                    <input type="text" placeholder="Your Qualification*" name="qualification" id="qualification" required>
+                                    <input type="file" placeholder="Upload Resume*" name="resume" id="j-resume" required>
+                                    <textarea placeholder="Your message*" name="message" id="j-message" cols="30" rows="4"></textarea>
                                 </div>
                             
-                                <button class="btn-2" id="submit-btn" onClick="sendEmail()" type="submit">Submit My Enquiry</button>
+                                <button class="btn" id="submit-btn" onClick="joinNow()" type="submit">Submit My Enquiry</button>
                             </form>
                             
                         </div>
@@ -126,11 +130,13 @@
                             <h1>Mr. Prashant</h1>
 
                             <div class="contact-details">
-                                <p>Mobile: +91 99675 42950</p>
-                                <p>Email: <a href="mailto:prashant.j@gempl.co.in"></a>prashant.j@gempl.co.in</p>
+                                <p>Mobile:<a href="tel:+919967542950">+91 99675 42950</a></p>
+                                <p>Email: <a href="mailto:prashant.j@gempl.co.in">prashant.j@gempl.co.in</a></p>
                             </div>
 
-                            <a href="#">Connect on Linkedin</a>
+                            <p>
+                                <a href="https://www.linkedin.com/in/prashant-joshi-2b775713/">Connect on Linkedin</a>
+                            </p>
                         </div>
                     </div>
 
@@ -143,11 +149,13 @@
                             <h1>Mr. Mahesh</h1>
 
                             <div class="contact-details">
-                                <p>Mobile: +91 99675 42950</p>
-                                <p>Email: <a href="mailto:mahesh.c@gempl.co.in"></a>mahesh.c@gempl.co.in</p>
+                                <p>Mobile: <a href="tel:+919967542950">+91 99675 42950</a></p>
+                                <p>Email: <a href="mailto:mahesh.c@gempl.co.in">mahesh.c@gempl.co.in</a></p>
                             </div>
 
-                            <a href="#">Connect on Linkedin</a>
+                            <p>
+                                <a href="https://www.linkedin.com/in/mahesh-chhatre-ab8929a/">Connect on Linkedin</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -156,13 +164,24 @@
         </section>
 
         <section class="map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15088.506377357375!2d72.8370545!3d19.0141425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec2f6ea9e1d%3A0xc388ef5425adc7f4!2sJogani%20Industrial%20Estate.!5e0!3m2!1sen!2sin!4v1727006293152!5m2!1sen!2sin" width="1120" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4128443247373!2d72.85889497466444!3d19.04557775292794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8d1b0cd0b7f%3A0x80b9de057dce5844!2sJogani%20Ind%20Estate%20Chunabhatti!5e0!3m2!1sen!2sin!4v1727085063933!5m2!1sen!2sin" width="1120" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
         </section>
     </main>
 
     <footer></footer>
 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "n4d0NV2jrdQ-1Wl5g",
+      });
+    })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/email.js"></script>
 </body>
 </html>

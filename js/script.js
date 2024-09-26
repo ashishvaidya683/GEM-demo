@@ -59,7 +59,6 @@ function handleScroll() {
 // Listen for scroll events
 window.addEventListener('scroll', handleScroll);
 
-
 // Tabs
 document.addEventListener("DOMContentLoaded", function() {
     const tabButtons = document.querySelectorAll('.tab-button');
@@ -77,3 +76,85 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// Logo Slider
+
+
+function logoSwiper() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+}
+logoSwiper();
+
+function logoSwiperAbout() {
+    var swiper = new Swiper(".mySwiper2", {
+        loop: true,                // Enable infinite looping
+        autoplay: {
+            delay: 2500,           // Auto-slide every 2.5 seconds
+            disableOnInteraction: false,  // Autoplay continues after user interaction
+        },
+        speed: 800,                // Slide transition speed (800ms)
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            // When the viewport width is 767px or less (mobile)
+            360: {
+                slidesPerView: 3,  // Show 3 slides on mobile
+                spaceBetween: 20,  // Adjust space between slides for mobile
+            },
+            // When the viewport width is greater than or equal to 1025px (desktop)
+            1025: {
+                slidesPerView: 5,  // Show 5 slides on desktop
+                spaceBetween: 30,  // Keep space between slides for desktop
+            },
+        },
+    });
+}
+logoSwiperAbout();
+
+  
+
+  function logoSwiperAbout1() {
+    var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 5,          // Default number of slides
+      spaceBetween: 30,          // Default space between slides
+      loop: true,                // Enable infinite looping
+      autoplay: {
+        delay: 2500,             // Auto-slide every 2.5 seconds
+        disableOnInteraction: false,  // Autoplay continues after user interaction
+        reverseDirection: true,  // Slides move from right to left
+      },
+      direction: 'horizontal',   // Horizontal sliding (default)
+      speed: 800,                // Slide transition speed (800ms)
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // When the viewport width is less than or equal to 767px (mobile)
+        360: {
+          slidesPerView: 3,      // Show 3 slides on mobile
+          spaceBetween: 20,      // Adjust space between slides for mobile
+        },
+        // When the viewport width is greater than 1025px (desktop)
+        1025: {
+          slidesPerView: 5,      // Show 5 slides on desktop
+          spaceBetween: 30,      // Adjust space between slides for desktop
+        },
+      },
+    });
+  }
+  logoSwiperAbout1();
+  
+  
+  
+  
+  

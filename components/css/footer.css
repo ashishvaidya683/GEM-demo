@@ -60,7 +60,7 @@ h3 {
   color: #fff;
 }
 
-p {
+p, b {
   font-family: "Inter", sans-serif !important;
   font-optical-sizing: auto !important;
   font-style: normal !important;
@@ -93,6 +93,13 @@ p {
   padding: 11px 20px !important;
   border: 0px transparent !important;
   color: #fff !important;
+  font-family: "Inria Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+button a {
+  color: #fff;
   font-family: "Inria Sans", sans-serif !important;
   font-weight: 400 !important;
   font-style: normal !important;
@@ -1818,11 +1825,25 @@ footer .footer-container .content .img-container img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+footer .footer-container .content p {
+  font-size: 15px !important;
+  color: #fff;
+}
+footer .footer-container .content p b {
+  font-size: 15px !important;
+  color: #fff;
+}
 footer .footer-container .content ul {
   list-style-type: none;
 }
 footer .footer-container .content ul li {
   padding-bottom: 12px;
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+}
+footer .footer-container .content ul li a {
+  color: #fff;
 }
 footer .bottom-footer {
   display: flex;
@@ -1830,8 +1851,54 @@ footer .bottom-footer {
   justify-content: space-between;
   padding: 20px 0px;
 }
-
-p {
-  font-size: 15 !important;
+footer .bottom-footer p {
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 60px;
+    background-color: #132643;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 70px;
+    padding-top: 56px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #fff;
+  }
+  footer .footer-container .content {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    color: #fff;
+  }
+  footer .footer-container .content .img-container {
+    width: auto;
+    height: 52px;
+  }
+  footer .footer-container .content .img-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer .footer-container .content ul {
+    list-style-type: none;
+  }
+  footer .footer-container .content ul li {
+    padding-bottom: 12px;
+  }
+  footer .bottom-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
 }/*# sourceMappingURL=footer.css.map */

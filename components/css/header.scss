@@ -252,11 +252,12 @@
                             font-weight: 500;
                         }
             
-                        a:hover {
-                            color: #093d82;
-                            text-decoration: underline !important;
-                            text-underline-offset: 8px;
-                        }
+                        a.active,
+                    a:hover{
+                        color: #093d82;
+                        text-decoration: underline !important;
+                        text-underline-offset: 8px;
+                    }
                     }
                 }
             }
